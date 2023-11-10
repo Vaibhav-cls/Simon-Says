@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Simon Says!!</title>
+  </head>
+  <body>
+    <div class="mobile-view">
+        <h2><span>Oops!!</span> Looks like you're on wrong device<br>Maybe I'll be more comfortable if you open me on desktop/laptop</h2>
+    </div>
+    <div class="desktop-view">
+      <div class="sidebar">
+        <div class="level">
+          <h2>Level</h2>
+          <h1
+            id="levelUp"
+            style="
+              color: yellow;
+              font-size: 80px;
+              transition: all 0.3s ease-in-out;
+            "
+          >
+            1
+          </h1>
+        </div>
+        <div class="scoreTable">
+          <h2>Score</h2>
+          <h3 id="point">0 pts</h3>
+        </div>
+        <div class="information">
+          <h4>About the game:</h4>
+          <p>
+            Simon says is a exercise cum activity game which helps you to
+            exercise your brain, you just have to remember the sequence of the
+            colors blinking on the screen and repeat that in the same order.
+          </p>
+          <h4>How to play ?</h4>
+          <p><i class="fa fa-circle"></i>Press any key to start the game</p>
+          <p>
+            <i class="fa fa-circle"></i>Remember the blinks and click on the
+            colors in the correct sequence
+          </p>
+          <p>
+            <i class="fa fa-circle"></i>As you progress the level will increase
+            and you will gain 5 points for each level
+          </p>
+          <p>
+            <i class="fa fa-circle"></i>If you fail, you can restart the game
+            from level 1 by pressing any keys
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card-container">
+          <h1>Simon Says Game</h1>
+          <h2 id="label">Press any key to start the game</h2>
+          <div class="btn-container">
+            <div class="buttons" id="red" type="button"></div>
+            <div class="buttons" id="blue" type="button"></div>
+          </div>
+          <div class="btn-container">
+            <div class="buttons" id="purple" type="button"></div>
+            <div class="buttons" id="yellow" type="button"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
